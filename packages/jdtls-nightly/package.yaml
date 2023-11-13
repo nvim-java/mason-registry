@@ -1,0 +1,42 @@
+---
+name: jdtls-nightly
+description: Java language server.
+homepage: https://github.com/eclipse/eclipse.jdt.ls
+licenses:
+  - EPL-2.0
+languages:
+  - Java
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:generic/eclipse/eclipse.jdt.ls@v1.30.0
+  download:
+    - target: [darwin_x64, darwin_arm64]
+      files:
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/snapshots/jdt-language-server-{{ version | strip_prefix "v" }}-202311082110.tar.gz
+        lombok.jar: https://projectlombok.org/downloads/lombok.jar
+      config: config_mac/
+    - target: linux
+      files:
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/snapshots/jdt-language-server-{{ version | strip_prefix "v" }}-202311082110.tar.gz
+        lombok.jar: https://projectlombok.org/downloads/lombok.jar
+      config: config_linux/
+    - target: win
+      files:
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/snapshots/jdt-language-server-{{ version | strip_prefix "v" }}-202311082110.tar.gz
+        lombok.jar: https://projectlombok.org/downloads/lombok.jar
+      config: config_win/
+
+schemas:
+  lsp: vscode:https://raw.githubusercontent.com/redhat-developer/vscode-java/master/package.json
+
+bin:
+  jdtls: python:bin/jdtls
+
+share:
+  jdtls/lombok.jar: lombok.jar
+  jdtls/plugins/: plugins/
+  jdtls/plugins/org.eclipse.equinox.launcher.jar: plugins/org.eclipse.equinox.launcher_1.6.600.v20231012-1237.jar
+  jdtls/config/: "{{source.download.config}}"
