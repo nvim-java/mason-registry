@@ -1,0 +1,76 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://json.schemastore.org/mason-registry.json/components/sources/github/release",
+    "type": "object",
+    "$defs": {
+        "Asset": {
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": ["target", "file"],
+                        "additionalProperties": true,
+                        "properties": {
+                            "target": {
+                                "oneOf": [
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "$ref": "/mason-registry.json/enums/platform"
+                                        }
+                                    },
+                                    {
+                                        "$ref": "/mason-registry.json/enums/platform"
+                                    }
+                                ]
+                            },
+                            "file": {
+                                "oneOf": [
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": ["file"],
+                    "properties": {
+                        "file": {
+                            "oneOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "required": ["id", "asset"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^pkg:github/.+/.+@.+"
+        },
+        "asset": {
+            "$ref": "#/$defs/Asset"
+        }
+    }
+}
