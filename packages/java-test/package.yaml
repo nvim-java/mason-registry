@@ -12,7 +12,7 @@ description: |
   - JUnit 4 (v4.8.0+)
   - JUnit 5 (v5.1.0+)
   - TestNG (v6.8.0+)
-homepage: https://github.com/microsoft/vscode-java-test
+homepage: https://github.com/nvim-java/vscode-java-test
 licenses:
   - MIT
 languages:
@@ -21,7 +21,7 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/microsoft/vscode-java-test@0.40.1
+  id: pkg:github/nvim-java/vscode-java-test@0.40.2
   build:
     run: |
       npm install
