@@ -7,7 +7,7 @@ description: |
 
 homepage: https://github.com/spring-projects/sts4
 licenses:
-  - Eclipse Public License - v 1.0
+  - EPL-1.0
 languages:
   - Java
 categories:
