@@ -1,0 +1,22 @@
+---
+name: sts4
+description: |
+  Spring Tools 4 is the next generation of Spring tooling for your favorite coding environment.
+  Largely rebuilt from scratch, it provides world-class support for developing Spring-based enterprise
+  applications.
+
+homepage: https://github.com/spring-projects/sts4
+licenses:
+  - EPL-1.0
+languages:
+  - Java
+categories:
+  - LSP
+
+source:
+  id: pkg:github/spring-projects/sts4@4.20.1.RELEASE
+  asset:
+    file: vscode-spring-boot-1.50.0-RC.2.vsix
+
+share:
+  sts4/: extension/jars/
