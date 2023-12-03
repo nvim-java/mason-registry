@@ -1,0 +1,28 @@
+---
+name: openjdk-17
+description: |
+  The Java Development Kit is a distribution of Java Technology by Oracle Corporation.
+  It implements the Java Language Specification and the Java Virtual Machine Specification
+  and provides the Standard Edition of the Java Application Programming Interface.
+homepage: https://github.com/eclipse/eclipse.jdt.ls
+licenses:
+  - GPL-2.0
+languages:
+  - Java
+categories:
+  - Runtime
+
+source:
+  id: pkg:generic/java/openjdk@17.0.2
+  download:
+    - target: [darwin_x64, darwin_arm64]
+      files:
+        openjdk-17.0.2.zip: https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_windows-x64_bin.zip
+
+    - target: linux
+      files:
+        openjdk-17.0.2.tar.gz: https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_linux-x64_bin.tar.gz
+
+    - target: win
+      files:
+        openjdk-17.0.2.tar.gz: https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_macos-x64_bin.tar.gz
