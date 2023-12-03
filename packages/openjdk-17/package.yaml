@@ -10,7 +10,7 @@ licenses:
 languages:
   - Java
 categories:
-  - Other
+  - Runtime
 
 source:
   id: pkg:java.net/openjdk@17.0.2
