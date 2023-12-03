@@ -13,7 +13,7 @@ categories:
   - Runtime
 
 source:
-  id: pkg:java.net/openjdk@17.0.2
+  id: pkg:generic/java/openjdk@17.0.2
   download:
     - target: [darwin_x64, darwin_arm64]
       files:
