@@ -12,7 +12,7 @@ description: |
   - JUnit 4 (v4.8.0+)
   - JUnit 5 (v5.1.0+)
   - TestNG (v6.8.0+)
-homepage: https://github.com/nvim-java/vscode-java-test
+homepage: https://github.com/nvim-java/vscode-java-test-releases
 licenses:
   - MIT
 languages:
@@ -21,11 +21,9 @@ categories:
   - DAP
 
 source:
-  id: pkg:github/nvim-java/vscode-java-test@0.40.2
-  build:
-    run: |
-      npm install
-      npm run build-plugin
+  id: pkg:github/nvim-java/vscode-java-test-releases@0.40.1
+  asset:
+    file: artifacts.zip
 
 share:
   java-test/: server/
