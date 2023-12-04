@@ -26,4 +26,4 @@ source:
     file: artifacts.zip
 
 share:
-  java-test/: server/
+  java-test/: extension/server/
