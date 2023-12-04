@@ -1,15 +1,11 @@
-![Linux](https://img.shields.io/badge/Linux-%23.svg?style=flat-square&logo=linux&color=FCC624&logoColor=black)
-![macOS](https://img.shields.io/badge/macOS-%23.svg?style=flat-square&logo=apple&color=000000&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-%23.svg?style=flat-square&logo=windows&color=0078D6&logoColor=white)
-[![Package tests](https://img.shields.io/badge/CI-Package%20Tests-brightgreen?style=flat-square&logo=github)](https://github.com/mason-org/mason-registry/actions/workflows/package-tests.yaml)
-[![Sponsors](https://img.shields.io/github/sponsors/williamboman?style=flat-square)](https://github.com/sponsors/williamboman)
+# :coffee: mason-registry
 
-![mason-registry](https://user-images.githubusercontent.com/6705160/230374582-25c9c26a-7885-4e1e-960d-3ec6880fbcb4.png)
+![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white)
+![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
+![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
 
-<p align="center">
-    Core package registry for <a href="https://github.com/williamboman/mason.nvim"><code>mason.nvim</code></a>.
-</p>
+This project includes java related libraries, runtimes etc... that is not available in the main mason-registry
 
-Refer to [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines.
-
-Compiled registry contents are available via [releases](https://github.com/mason-org/mason-registry/releases).
+## Head on to main project [:coffee: nvim-java](https://github.com/nvim-java/nvim-java)
