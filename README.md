@@ -8,4 +8,21 @@
 
 This project includes java related libraries, runtimes etc... that is not available in the main mason-registry
 
+## How to Install
+
+- You can add the new registry before the default mason-registry as follows
+- Run `Mason` and wait for mason to update the new registry
+
+```lua
+{
+  'williamboman/mason.nvim',
+  opts = {
+    registries = {
+      'github:nvim-java/mason-registry',
+      'github:mason-org/mason-registry',
+    },
+  },
+}
+```
+
 ## Head on to main project [:coffee: nvim-java](https://github.com/nvim-java/nvim-java)
