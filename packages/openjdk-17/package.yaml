@@ -17,7 +17,7 @@ source:
   download:
     - target: [darwin_x64, darwin_arm64]
       files:
-        openjdk-17.0.2.zip: https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_windows-x64_bin.zip
+        openjdk-17.0.2.tar.gz: https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_macos-x64_bin.tar.gz
 
     - target: linux
       files:
@@ -25,4 +25,5 @@ source:
 
     - target: win
       files:
-        openjdk-17.0.2.tar.gz: https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_macos-x64_bin.tar.gz
+        openjdk-17.0.2.zip: https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_windows-x64_bin.zip
+        
