@@ -1,0 +1,26 @@
+---
+name: lombok-nightly
+description: Project Lombok. Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java
+homepage: https://projectlombok.org
+licenses:
+  - MIT
+languages:
+  - Java
+categories:
+  - Runtime
+
+source:
+  id: pkg:generic/lombok/lombok.jar@nightly
+  download:
+    - target: [darwin_x64, darwin_arm64]
+      files:
+        lombok.jar: https://projectlombok.org/lombok-edge.jar
+    - target: linux
+      files:
+        lombok.jar: https://projectlombok.org/lombok-edge.jar
+    - target: win
+      files:
+        lombok.jar: https://projectlombok.org/lombok-edge.jar
+
+share:
+  lombok-nightly/lombok.jar: lombok.jar
