@@ -16,17 +16,14 @@ source:
     - target: [darwin_x64, darwin_arm64]
       files:
         jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202401111522.tar.gz
-        lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_mac/
     - target: linux
       files:
         jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202401111522.tar.gz
-        lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_linux/
     - target: win
       files:
         jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202401111522.tar.gz
-        lombok.jar: https://projectlombok.org/downloads/lombok.jar
       config: config_win/
 
 schemas:
@@ -36,7 +33,6 @@ bin:
   jdtls: python:bin/jdtls
 
 share:
-  jdtls/lombok.jar: lombok.jar
   jdtls/plugins/: plugins/
   jdtls/plugins/org.eclipse.equinox.launcher.jar: plugins/org.eclipse.equinox.launcher_1.6.700.v20231214-2017.jar
   jdtls/config/: "{{source.download.config}}"
