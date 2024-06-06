@@ -50,8 +50,8 @@
 
 # Schema
 
-Package definitions are validated against a well-defined [JSON schema](./schemas/). The full schema is hosted on
-<http://schemastore.org/>.
+Package definitions are validated against a well-defined [JSON schema](https://github.com/mason-org/registry-schema).
+The full schema is hosted on <http://schemastore.org/>.
 
 <sup>
     Use <a href="https://github.com/b0o/SchemaStore.nvim">b0o/SchemaStore.nvim</a> and the YAML language server to
