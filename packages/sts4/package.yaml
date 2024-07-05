@@ -1,10 +1,9 @@
 ---
-name: sts4
+name: spring-boot-tools
 description: |
-  Spring Tools 4 is the next generation of Spring tooling for your favorite coding environment.
-  Largely rebuilt from scratch, it provides world-class support for developing Spring-based enterprise
-  applications.
-
+  Provides validation and content assist for Spring Boot `application.properties`,
+  `application.yml` properties files. As well as Boot-specific support for
+  `.java` files.
 homepage: https://github.com/spring-projects/sts4
 licenses:
   - EPL-1.0
@@ -14,9 +13,10 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/spring-projects/sts4@4.20.1.RELEASE
-  asset:
-    file: vscode-spring-boot-1.50.0-RC.2.vsix
+  id: pkg:openvsx/VMware/vscode-spring-boot@1.55.1
+  download:
+    file: VMware.vscode-spring-boot-{{version}}.vsix
 
 share:
-  sts4/: extension/jars/
+  spring-boot-tools/jars: extension/jars
+  spring-boot-tools/com.microsoft.java.test.plugin.jar: extension/server/com.microsoft.java.test.plugin-{{version}}.jar
