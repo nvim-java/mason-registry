@@ -18,4 +18,4 @@ source:
     file: VMware.vscode-spring-boot-{{version}}.vsix
 
 share:
-  spring-boot-tools/jars: extension/jars
+  spring-boot-tools/jars/: extension/jars/
