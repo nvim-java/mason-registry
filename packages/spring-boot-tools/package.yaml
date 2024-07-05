@@ -19,4 +19,3 @@ source:
 
 share:
   spring-boot-tools/jars: extension/jars
-  spring-boot-tools/com.microsoft.java.test.plugin.jar: extension/server/com.microsoft.java.test.plugin-{{version}}.jar
