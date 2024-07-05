@@ -1,0 +1,21 @@
+---
+name: spring-boot-tools
+description: |
+  Provides validation and content assist for Spring Boot `application.properties`,
+  `application.yml` properties files. As well as Boot-specific support for
+  `.java` files.
+homepage: https://github.com/spring-projects/sts4
+licenses:
+  - EPL-1.0
+languages:
+  - Java
+categories:
+  - LSP
+
+source:
+  id: pkg:openvsx/VMware/vscode-spring-boot@1.55.1
+  download:
+    file: VMware.vscode-spring-boot-{{version}}.vsix
+
+share:
+  spring-boot-tools/jars/: extension/jars/
