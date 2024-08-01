@@ -1,9 +1,0 @@
-{
-    "tasks": [
-        {
-            "label": "Push to dev remote",
-            "type": "shell",
-            "command": "git add . && git commit -m test && git push --force my $(git branch --show-current):main"
-        }
-    ]
-}
