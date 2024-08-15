@@ -10,19 +10,19 @@ categories:
   - LSP
 
 source:
-  id: pkg:generic/eclipse/eclipse.jdt.ls@v1.37.0
+  id: pkg:generic/eclipse/eclipse.jdt.ls@v1.38.0
   download:
     - target: [darwin_x64, darwin_arm64]
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202406271335.tar.gz
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202408011337.tar.gz
       config: config_mac/
     - target: linux
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202406271335.tar.gz
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202408011337.tar.gz
       config: config_linux/
     - target: win
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202406271335.tar.gz
+        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202408011337.tar.gz
       config: config_win/
 
 schemas:
