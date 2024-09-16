@@ -5,17 +5,12 @@ description: |
   `application.yml` properties files. As well as Boot-specific support for
   `.java` files.
 homepage: https://github.com/spring-projects/sts4
-licenses:
-  - EPL-1.0
-languages:
-  - Java
-categories:
-  - LSP
-
+licenses: [EPL-1.0]
+languages: [Java]
+categories: [LSP]
 source:
-  id: pkg:openvsx/VMware/vscode-spring-boot@1.57.0
+  id: pkg:openvsx/VMware/vscode-spring-boot@1.56.0
   download:
     file: VMware.vscode-spring-boot-{{version}}.vsix
-
 share:
   spring-boot-tools/jars/: extension/jars/
