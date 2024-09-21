@@ -1,0 +1,38 @@
+---
+name: openjdk-21
+description: |
+  The Java Development Kit is a distribution of Java Technology by Oracle Corporation.
+  It implements the Java Language Specification and the Java Virtual Machine Specification
+  and provides the Standard Edition of the Java Application Programming Interface.
+homepage: https://github.com/eclipse/eclipse.jdt.ls
+licenses:
+  - GPL-2.0
+languages:
+  - Java
+categories:
+  - Runtime
+
+source:
+  id: pkg:generic/java/openjdk@21.0.2
+  download:
+    - target: [darwin_x64, darwin_arm64]
+      files:
+        openjdk-21.0.2.tar.gz: https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_macos-x64_bin.tar.gz
+      bin: jdk-21.0.2.jdk/Contents/Home/bin/java
+
+    - target: linux_arm64
+      files:
+        openjdk-21.0.2.tar.gz: https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_linux-aarch64_bin.tar.gz
+      bin: jdk-21.0.2/bin/java
+
+    - target: linux_x64
+      files:
+        openjdk-21.0.2.tar.gz: https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_linux-x64_bin.tar.gz
+      bin: jdk-21.0.2/bin/java
+
+    - target: win
+      files:
+        openjdk-21.0.2.zip: https://download.java.net/java/GA/jdk21.0.2/f2283984656d49d69e91c558476027ac/13/GPL/openjdk-21.0.2_windows-x64_bin.zip
+      bin: jdk-21.0.2/bin/java.exe
+bin:
+  java: "{{source.download.bin}}"
