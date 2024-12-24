@@ -14,22 +14,22 @@ source:
   download:
     - target: [darwin_x64, darwin_arm64]
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202412191447.tar.gz
+        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/releases/download/{{ version | strip_prefix "v" }}/jdtls.tar.gz
       config: config_mac/
 
     - target: [linux_x64, linux_x86]
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202412191447.tar.gz
+        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/releases/download/{{ version | strip_prefix "v" }}/jdtls.tar.gz
       config: config_linux/
 
     - target: linux_arm64
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202412191447.tar.gz
+        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/releases/download/{{ version | strip_prefix "v" }}/jdtls.tar.gz
       config: config_linux_arm/
 
     - target: win
       files:
-        jdtls.tar.gz: https://download.eclipse.org/jdtls/milestones/{{ version | strip_prefix "v" }}/jdt-language-server-{{ version | strip_prefix "v" }}-202412191447.tar.gz
+        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/releases/download/{{ version | strip_prefix "v" }}/jdtls.tar.gz
       config: config_win/
 
 schemas:
@@ -40,5 +40,4 @@ bin:
 
 share:
   jdtls/plugins/: plugins/
-  jdtls/plugins/org.eclipse.equinox.launcher.jar: plugins/org.eclipse.equinox.launcher_1.6.900.v20240613-2009.jar
   jdtls/config/: "{{source.download.config}}"
