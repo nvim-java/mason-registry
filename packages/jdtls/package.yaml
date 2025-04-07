@@ -14,29 +14,30 @@ source:
   download:
     - target: [darwin_x64, darwin_arm64]
       files:
-        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/releases/download/{{ version | strip_prefix "v" }}/jdtls.tar.gz
+        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/archive/refs/tags/{{ version | strip_prefix "v" }}/jdtls.tar.gz
       config: config_mac/
 
     - target: [linux_x64, linux_x86]
       files:
-        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/releases/download/{{ version | strip_prefix "v" }}/jdtls.tar.gz
+        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/archive/refs/tags/{{ version | strip_prefix "v" }}/jdtls.tar.gz
       config: config_linux/
 
     - target: linux_arm64
       files:
-        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/releases/download/{{ version | strip_prefix "v" }}/jdtls.tar.gz
+        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/archive/refs/tags/{{ version | strip_prefix "v" }}/jdtls.tar.gz
       config: config_linux_arm/
 
     - target: win
       files:
-        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/releases/download/{{ version | strip_prefix "v" }}/jdtls.tar.gz
+        jdtls.tar.gz: https://github.com/nvim-java/release-jdtls/archive/refs/tags/{{ version | strip_prefix "v" }}/jdtls.tar.gz
       config: config_win/
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/redhat-developer/vscode-java/master/package.json
 
-bin:
-  jdtls: python:bin/jdtls
+# In my case this provide Error
+#bin:
+#  jdtls: python:bin/jdtls
 
 share:
   jdtls/plugins/: plugins/
